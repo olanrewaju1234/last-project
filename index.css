@@ -1,5 +1,7 @@
 html {
     background-color: lightgreen;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -174,6 +176,61 @@ button.learnmore {
 
 /* ############# mobile screen ####### */
 @media screen and (max-width:800px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.toggle {
+        display: block;
+        float: right;
+        margin-bottom: -2px;
+    }
+    ul.topnav.responsive li.toggle{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    nav ul.topnav li.topnav-right {
+        float: none;
+    }
+    .col-6, 
+    .col-4{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .screefooter {
+        width: 50%;
+    }
+    div.leftmargin, .leftmargin-2 {
+        margin-left: 5%;
+    }
+    div.leftmargin h1 {
+        font-size: 45px;
+    }
+    div.leftmargin-3 {
+        margin: 10Px 10px 0px 10px;
+        display: block;
+        overflow: hidden;
+    }
+    h1.firstheader  {
+        font-weight: 100;
+        font-size: 35px;
+        margin: 5px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:320px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
